@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Menu</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .content-container {
+            flex: 1;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container" id="content1">
+        <div class="content">로딩 중...</div>
+    </div>
+    <div class="content-container" id="content2">
+        <div class="content">로딩 중...</div>
+    </div>
+    <div class="content-container" id="content3">
+        <div class="content">로딩 중...</div>
+    </div>
+
+    <script>
+        async function fetchData(containerId, endpoint) {
+            const response = await fetch(endpoint);
+            const text = await response.text();
+            document.querySelector(`#${containerId} .content`).innerHTML = text;
+        }
+
+        fetchData('content1', 'http://localhost:3000/menu1');
+        fetchData('content2', 'http://localhost:3000/menu2');
+        fetchData('content3', 'http://localhost:3000/menu3');
+    </script>
+</body>
+</html>
