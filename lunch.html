@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <style>
+        @font-face {
+            font-family: 'BMJUA';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .content-container {
+            flex: 1;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .content {
+            padding: 20px;
+            font-family: 'BMJUA', Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container" id="content1">
+        <div class="content">테이블 청소 중...</div>
+    </div>
+    <div class="content-container" id="content2">
+        <div class="content">메뉴판 준비 중...</div>
+    </div>
+
+    <script>
+        function startLoadingAnimation(containerId, initialMessage) {
+            let dots = 3;
+            const intervalId = setInterval(() => {
+                dots = (dots % 10) + 1; // 3에서 10까지 점 개수 증가
+                const dotStr = '.'.repeat(dots);
+                document.querySelector(`#${containerId} .content`).innerText = `${initialMessage}${dotStr}`;
+            }, 1000);
+            return intervalId;
+        }
+
+        async function fetchData(containerId, endpoint, initialMessage) {
+            const intervalId = startLoadingAnimation(containerId, initialMessage);
+            const response = await fetch(endpoint);
+            const text = await response.text();
+            clearInterval(intervalId);
+            document.querySelector(`#${containerId} .content`).innerHTML = text;
+        }
+
+        fetchData('content1', 'http://localhost:3000/menu4', '테이블 청소 중');
+        fetchData('content2', 'http://localhost:3000/menu5', '메뉴판 준비 중');
+    </script>
+</body>
+</html>

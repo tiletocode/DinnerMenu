@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Menu</title>
+    <title>Menu</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <style>
+        @font-face {
+            font-family: 'BMJUA';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         body {
             display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #ffffff;
+            font-family: 'BMJUA';
         }
-        .content-container {
-            flex: 1;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            overflow-y: auto;
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%; /* 이미지 간격 */
+            text-align: center;
         }
-        .content {
-            padding: 20px;
+        .container a {
+            margin: 0 20px; 
+            text-decoration: none; 
+            color: black; 
+            font-size: 24px;
+        }
+        .container div {
+            margin-top: 20px; /* 이미지와 텍스트 사이의 간격을 설정합니다 */
         }
     </style>
 </head>
 <body>
-    <div class="content-container" id="content1">
-        <div class="content">로딩 중...</div>
+    <div class="container">
+        <a href="lunch.html">
+            <img src="lunch.png" alt="Lunch">
+            <div>Lunch</div>
+        </a>
+        <a href="dinner.html">
+            <img src="dinner.png" alt="Dinner">
+            <div>&nbsp;&nbsp;Dinner</div>
+        </a>
     </div>
-    <div class="content-container" id="content2">
-        <div class="content">로딩 중...</div>
-    </div>
-    <div class="content-container" id="content3">
-        <div class="content">로딩 중...</div>
-    </div>
-
-    <script>
-        async function fetchData(containerId, endpoint) {
-            const response = await fetch(endpoint);
-            const text = await response.text();
-            document.querySelector(`#${containerId} .content`).innerHTML = text;
-        }
-
-        fetchData('content1', 'http://localhost:3000/menu1');
-        fetchData('content2', 'http://localhost:3000/menu2');
-        fetchData('content3', 'http://localhost:3000/menu3');
-    </script>
 </body>
 </html>
