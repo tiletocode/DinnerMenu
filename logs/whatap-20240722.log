@@ -1,0 +1,62 @@
+20240722 02:06:48[WHATAP-001] <36160> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240722 02:06:48[WHATAP-INIT] <36160> HttpObserver starting!
+20240722 02:06:48[WHATAP-INIT] <36160> HttpObserver starting!
+20240722 02:06:48[WHATAP-INIT] <36160> NetObserver starting!
+20240722 02:06:48[WHTAP-loadObserves] <36160> unable to load mysql module
+20240722 02:06:48[WHATAP-INIT] <36160> FileObserve starting!
+20240722 02:06:48[WHATAP-INIT] <36160> ExpressObserver starting!
+20240722 02:06:48[WHATAP-203] <36160> Config file reloaded
+20240722 02:06:48[WHATAP-101] <36160> Finish initialize configuration... false
+20240722 02:06:48[WHATAP-110] <36160> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240722 02:06:48[WHATAP-170] <36160> [WhaTap Agent] now waiting for starting......
+20240722 02:06:53[WHATAP-011] <36160> Connecton Retry....
+20240722 02:06:53[WHATAP-180] <36160> Try to connect to {"host":"141.164.62.222","port":6600}
+20240722 02:06:53[WHATAP-968] <36160> OID: -380943838 ONAME: menu-backend IP: 172.30.1.49
+20240722 02:06:53[[cloudPlatformCheck]] <36160> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20240722 02:06:53[[cloudPlatformCheck Error]] <36160> Error: connect ENETUNREACH 169.254.169.254:80
+20240722 02:08:12[WHATAP-001] <34212> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240722 02:08:12[WHATAP-INIT] <34212> HttpObserver starting!
+20240722 02:08:12[WHATAP-INIT] <34212> HttpObserver starting!
+20240722 02:08:12[WHATAP-INIT] <34212> NetObserver starting!
+20240722 02:08:12[WHTAP-loadObserves] <34212> unable to load mysql module
+20240722 02:08:12[WHATAP-INIT] <34212> FileObserve starting!
+20240722 02:08:12[WHATAP-INIT] <34212> ExpressObserver starting!
+20240722 02:08:13[WHATAP-203] <34212> Config file reloaded
+20240722 02:08:13[WHATAP-101] <34212> Finish initialize configuration... false
+20240722 02:08:13[WHATAP-110] <34212> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240722 02:08:13[WHATAP-170] <34212> [WhaTap Agent] now waiting for starting......
+20240722 02:08:18[WHATAP-011] <34212> Connecton Retry....
+20240722 02:08:18[WHATAP-180] <34212> Try to connect to {"host":"141.164.62.222","port":6600}
+20240722 02:08:18[WHATAP-968] <34212> OID: 1552942917 ONAME: menu-local IP: 172.30.1.49
+20240722 02:08:18[[cloudPlatformCheck]] <34212> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20240722 02:08:18[[cloudPlatformCheck Error]] <34212> Error: connect ENETUNREACH 169.254.169.254:80
+20240722 02:12:14[WHATAP-001] <23800> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240722 02:12:14[WHATAP-INIT] <23800> HttpObserver starting!
+20240722 02:12:14[WHATAP-INIT] <23800> HttpObserver starting!
+20240722 02:12:14[WHATAP-INIT] <23800> NetObserver starting!
+20240722 02:12:14[WHTAP-loadObserves] <23800> unable to load mysql module
+20240722 02:12:14[WHATAP-INIT] <23800> FileObserve starting!
+20240722 02:12:14[WHATAP-INIT] <23800> ExpressObserver starting!
+20240722 02:12:14[WHATAP-203] <23800> Config file reloaded
+20240722 02:12:14[WHATAP-101] <23800> Finish initialize configuration... false
+20240722 02:12:14[WHATAP-110] <23800> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240722 02:12:14[WHATAP-170] <23800> [WhaTap Agent] now waiting for starting......
+20240722 02:12:19[WHATAP-011] <23800> Connecton Retry....
+20240722 02:12:19[WHATAP-180] <23800> Try to connect to {"host":"141.164.62.222","port":6600}
+20240722 02:12:19[WHATAP-968] <23800> OID: 1552942917 ONAME: menu-local IP: 172.30.1.49
+20240722 02:12:19[[cloudPlatformCheck]] <23800> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20240722 02:12:19[[cloudPlatformCheck Error]] <23800> Error: connect ENETUNREACH 169.254.169.254:80
+20240722 10:18:43[WHATAP-001] <23600> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240722 10:18:43[WHATAP-INIT] <23600> HttpObserver starting!
+20240722 10:18:43[WHATAP-INIT] <23600> HttpObserver starting!
+20240722 10:18:43[WHATAP-INIT] <23600> NetObserver starting!
+20240722 10:18:43[WHTAP-loadObserves] <23600> unable to load mysql module
+20240722 10:18:43[WHATAP-INIT] <23600> FileObserve starting!
+20240722 10:18:43[WHATAP-INIT] <23600> ExpressObserver starting!
+20240722 10:18:44[WHATAP-203] <23600> Config file reloaded
+20240722 10:18:44[WHATAP-101] <23600> Finish initialize configuration... false
+20240722 10:18:44[WHATAP-110] <23600> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240722 10:18:44[WHATAP-170] <23600> [WhaTap Agent] now waiting for starting......
+20240722 10:18:49[WHATAP-011] <23600> Connecton Retry....
+20240722 10:18:49[WHATAP-180] <23600> Try to connect to {"host":"141.164.62.222","port":6600}
+20240722 10:18:49[WHATAP-968] <23600> OID: 1552942917 ONAME: menu-local IP: 172.30.1.49

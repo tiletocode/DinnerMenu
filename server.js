@@ -1,3 +1,6 @@
+process.env.WHATAP_NAME = "menu-local";
+var whatap = require('whatap').NodeAgent;
+
 const express = require('express');
 const puppeteer = require('puppeteer');
 const cors = require('cors');
@@ -19,7 +22,10 @@ const cache = {
 };
 
 async function fetchContent(url) {
-    const browser = await puppeteer.launch();
+    // root에서도 실행가능하게 sandbox 해제
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle2' });
     const content = await page.content();
@@ -82,15 +88,15 @@ function logError(message) {
     logWithTimestamp(message, true);
 }
 
-// 평일(월-금)에만 30초마다 실행
-cron.schedule('*/30 * * * 1-5', () => {
+// 평일(월-금)에만 1분마다 실행
+cron.schedule('* * * * 1-5', () => {
     scrapeAndCache();
-    log('scraping success.');
+    log('Cron Scraping...');
 });
 
 // 서버 시작 시 최초 1회 스크래핑 실행
 scrapeAndCache();
-log('scraping success.');
+log('first scraping success.');
 
 app.get('/menu1', (req, res) => {
     res.send(cache.menu1 || '오류가 발생하였습니다. 잠시 후 다시 시도하세요.');

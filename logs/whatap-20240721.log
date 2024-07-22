@@ -1,0 +1,61 @@
+20240721 11:30:29[WHATAP-001] <21224> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240721 11:30:29[WHATAP-INIT] <21224> HttpObserver starting!
+20240721 11:30:29[WHATAP-INIT] <21224> HttpObserver starting!
+20240721 11:30:29[WHATAP-INIT] <21224> NetObserver starting!
+20240721 11:30:29[WHTAP-loadObserves] <21224> unable to load mysql module
+20240721 11:30:29[WHATAP-INIT] <21224> FileObserve starting!
+20240721 11:30:29[WHATAP-INIT] <21224> ExpressObserver starting!
+20240721 11:30:30[WHATAP-101] <21224> Finish initialize configuration... false
+TypeError: Cannot read properties of undefined (reading 'split')
+    at License.getKey (C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\license.js:17:26)
+    at Object.resetLicense (C:\Prj\DinnerMenu\node_modules\whatap\lib\net\security-master.js:42:31)
+    at Object.run (C:\Prj\DinnerMenu\node_modules\whatap\lib\net\security-master.js:31:18)
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\core\agent.js:135:30
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:76:24
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:209:21
+    at FSReqCallback.oncomplete (node:fs:187:23)
+TypeError: Cannot read properties of null (reading 'pcode')
+    at Object.resetLicense (C:\Prj\DinnerMenu\node_modules\whatap\lib\net\security-master.js:43:20)
+    at Object.run (C:\Prj\DinnerMenu\node_modules\whatap\lib\net\security-master.js:31:18)
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\core\agent.js:135:30
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:76:24
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:209:21
+    at FSReqCallback.oncomplete (node:fs:187:23)
+Error: Invalid license
+    at Object.run (C:\Prj\DinnerMenu\node_modules\whatap\lib\net\security-master.js:37:23)
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\core\agent.js:135:30
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:76:24
+    at C:\Prj\DinnerMenu\node_modules\whatap\lib\conf\configure.js:209:21
+    at FSReqCallback.oncomplete (node:fs:187:23)
+20240721 11:35:33[WHATAP-001] <26520> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240721 11:35:33[WHATAP-INIT] <26520> HttpObserver starting!
+20240721 11:35:33[WHATAP-INIT] <26520> HttpObserver starting!
+20240721 11:35:33[WHATAP-INIT] <26520> NetObserver starting!
+20240721 11:35:33[WHTAP-loadObserves] <26520> unable to load mysql module
+20240721 11:35:33[WHATAP-INIT] <26520> FileObserve starting!
+20240721 11:35:33[WHATAP-INIT] <26520> ExpressObserver starting!
+20240721 11:35:34[WHATAP-203] <26520> Config file reloaded
+20240721 11:35:34[WHATAP-101] <26520> Finish initialize configuration... false
+20240721 11:35:34[WHATAP-110] <26520> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240721 11:35:34[WHATAP-170] <26520> [WhaTap Agent] now waiting for starting......
+20240721 11:35:39[WHATAP-011] <26520> Connecton Retry....
+20240721 11:35:39[WHATAP-180] <26520> Try to connect to {"host":"141.164.62.222","port":6600}
+20240721 11:35:39[WHATAP-968] <26520> OID: 1246301426 ONAME: NODE-1-49 IP: 172.30.1.49
+20240721 11:35:39[[cloudPlatformCheck]] <26520> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20240721 11:35:39[[cloudPlatformCheck Error]] <26520> Error: connect ENETUNREACH 169.254.169.254:80
+20240721 11:44:05[WHATAP-001] <10752> Start initialize WhaTap Agent... Root[C:\Prj\DinnerMenu]
+20240721 11:44:05[WHATAP-INIT] <10752> HttpObserver starting!
+20240721 11:44:05[WHATAP-INIT] <10752> HttpObserver starting!
+20240721 11:44:05[WHATAP-INIT] <10752> NetObserver starting!
+20240721 11:44:05[WHTAP-loadObserves] <10752> unable to load mysql module
+20240721 11:44:05[WHATAP-INIT] <10752> FileObserve starting!
+20240721 11:44:05[WHATAP-INIT] <10752> ExpressObserver starting!
+20240721 11:44:06[WHATAP-203] <10752> Config file reloaded
+20240721 11:44:06[WHATAP-101] <10752> Finish initialize configuration... false
+20240721 11:44:06[WHATAP-110] <10752> [pcode=46,SECURE_KEY=b5565b6bccfca78f54aa8bb8daee1064]
+20240721 11:44:06[WHATAP-170] <10752> [WhaTap Agent] now waiting for starting......
+20240721 11:44:11[WHATAP-011] <10752> Connecton Retry....
+20240721 11:44:11[WHATAP-180] <10752> Try to connect to {"host":"141.164.62.222","port":6600}
+20240721 11:44:11[WHATAP-968] <10752> OID: -380943838 ONAME: menu-backend IP: 172.30.1.49
+20240721 11:44:11[[cloudPlatformCheck]] <10752> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20240721 11:44:11[[cloudPlatformCheck Error]] <10752> Error: connect ENETUNREACH 169.254.169.254:80
